@@ -20,12 +20,7 @@ export class Bike{
   }
 
   mostStolenManufacturer(array) {
-    console.log(array);
-    // array.sort(function(a,b){
-    //   return a[1] - b[1];
-    // });
-
-    let keysSorted = Object.keys(array).sort(function(a,b){return array[a]-array[b]});
-    console.log(keysSorted);
+    let keysSorted = Object.keys(array).sort(function(a,b){return array[a]-array[b];});
+    return keysSorted;
   }
 }
